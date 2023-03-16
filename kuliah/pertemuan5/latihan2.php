@@ -18,11 +18,24 @@ $makanan = ['🍜','🍗','🍛','🥪','🥚'];
         <li> <?= $binatang[$i]; ?></li>
         <?php } ?>
     </ul>
-    <hr>
     <h2>Daftar Makanan</h2>
     <ul>
         <?php for($i = 0; $i < 5; $i++) { ?>
         <li> <?= $makanan[$i]; ?></li>
-        <?php } ?> 
+        <?php } ?>
+    </ul>
+    <hr>
+    <h2>Daftar Binatang</h2>
+    <ol>
+        <?php foreach ($binatang as $b) { ?>
+            <li><?= $b; ?></li>
+        <?php } ?>
+
+    <h2>Daftar Makanan</h2>
+    <ul>
+        <?php foreach ($makanan as $m) { ?>
+            <li><?= $m; ?></li>
+        <?php } ?>
+        </ul>
 </body>
 </html>
