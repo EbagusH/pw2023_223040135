@@ -7,39 +7,39 @@ $film = [
         'Tahun' => '2005',
         'Genre' => 'Petualangan',
         'Pemeran Utama' => 'Aang',
-        'Sutradara' => 'Lauren MacMullan','Dave Filoni','Giancarlo Volpe','Ethan Spaulding','Joaquim Dos Santos'
+        'Sutradara' => 'Lauren MacMullan'
     ], 
     [
         'Poster' => 'Sonic.jpeg',
         'Judul' => 'Sonic The Hedgehog',
         'Tahun' => '2020',
         'Genre' => 'action-adventure',
-        'Pemeran Utama' =>  ,
-        'Sutradara' => ''
+        'Pemeran Utama' => 'James Marsden',
+        'Sutradara' => 'Jeff Fowler'
     ], 
     [
-        'Poster' => 'Eggy',
-        'Judul' => ['🍜','🍟','🍕'],
-        'Tahun' => '😼',
-        'Genre' =>  ,
-        'Pemeran Utama' =>  ,
-        'Sutradara' =>  
+        'Poster' => 'Aquaman.jpg',
+        'Judul' => 'Aquaman',
+        'Tahun' => '2018',
+        'Genre' => 'Petualangan',
+        'Pemeran Utama' => 'Jason Momoa',
+        'Sutradara' => 'James Wan'
     ], 
     [
-        'Poster' => 'Eggy',
-        'Judul' => ['🍜','🍟','🍕'],
-        'Tahun' => '😼',
-        'Genre' =>  ,
-        'Pemeran Utama' =>  ,
-        'Sutradara' =>  
+        'Poster' => 'White Raven.png',
+        'Judul' => 'Sniper The White Raven',
+        'Tahun' => '2022',
+        'Genre' => 'War',
+        'Pemeran Utama' => 'Pavlo Aldoshyn',
+        'Sutradara' => 'Maryan Bushan'
     ],
     [
-        'Poster' => 'Eggy',
-        'Judul' => ['🍜','🍟','🍕'],
-        'Tahun' => '😼',
-        'Genre' =>  ,
-        'Pemeran Utama' =>  ,
-        'Sutradara' =>  
+        'Poster' => 'Jujutsu Kaisen.png',
+        'Judul' => 'Jujutsu Kaisen',
+        'Tahun' => '2022',
+        'Genre' => 'Animasi',
+        'Pemeran Utama' => 'Yuta Okkotsu (Megumi Ogata)',
+        'Sutradara' => 'Sunghoo Park'
     ]
 ];
 
@@ -55,9 +55,9 @@ $film = [
 </head>
 <body>
 <h2>Daftar Film</h2>
-    <?php foreach($mahasiswa as $i => $ms) { ?>
+    <?php foreach($film as $i => $flm) { ?>
     <ul>
-        <li>Nama: <?= $ms ['Nama']; ?></li>
+        <li>Nama: <?= $flm ['Nama']; ?></li>
         <li>Makanan Favorit:
             <?php foreach ($ms ['Makanan'] as $m ) {
                 echo $m;
